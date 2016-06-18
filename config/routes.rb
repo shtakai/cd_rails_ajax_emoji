@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  root 'mood#index'
+  get 'mood/index' => 'mood#index'
+  post 'mood' => 'mood#get_mood'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
