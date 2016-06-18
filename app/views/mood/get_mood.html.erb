@@ -1,1 +1,9 @@
-get_mood
+<% if flash[:alert] %>
+  <%= flash[:alert] %>
+<% else %>
+  You feel...
+  <%= image_tag @image_url %>
+  today!
+<% end %>
+
+<%= link_to 'Enter Another Mood', root_path %>
